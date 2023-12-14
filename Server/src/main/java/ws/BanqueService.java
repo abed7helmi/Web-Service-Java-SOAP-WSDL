@@ -6,7 +6,7 @@ import jakarta.jws.WebService;
 
 import java.util.Date;
 import java.util.List;
-// POJO : Plain Old Java Object
+// POJO : Plain Old Java Object : une simlpe classe java
 @WebService(serviceName = "BanqueWS")
 public class BanqueService {
     @WebMethod(operationName = "ConversionEuroToDH")

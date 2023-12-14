@@ -1,11 +1,20 @@
 package ws;
 
 
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlTransient;
+
 import java.util.Date;
 
+
+// les annotation JAXB
+//@XmlAccessorType(XmlAccessorType.FIELD)
+@XmlRootElement(name="compte")
 public class Compte {
     private int code;
     private double solde;
+    //@XmlTransient // si je veux ignerer que JXB transforme cette colonne ne xml
     private Date dateCreation;
 
     public Compte() {
